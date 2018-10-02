@@ -11,4 +11,9 @@ This project demonstrates how to implement a login and registration system using
 7. Go into your project's Gradle Menu. 
 8. Double click <project name>\<project name> (root)\Tasks\android\siginingReport
 9. Copy the SHA1 result and paste it into "Debug Signing Certificate"
-  
+
+### Setting Up Authentication
+1. Go to your project page in Google Firebase
+2. Select "Authentication"
+3. Select "Sign-in method"
+4. Enable Email/Password.
