@@ -2,20 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
     android:background="@drawable/main_background"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Firebase Login Example"
         android:textAppearance="?android:textAppearanceLarge"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="Register an Account"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/main_username_edit"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -24,17 +34,25 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="30dp"
-        android:id="@+id/main_email_edit"/>
+        android:id="@+id/regis_email_edit"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:inputType="textPassword"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="15dp"
-        android:id="@+id/main_pass_edit"/>
+        android:layout_marginTop="30dp"
+        android:id="@+id/regis_password_edit"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/regis_confirm_edit"/>
 
     <Button
         android:layout_width="match_parent"
@@ -42,17 +60,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="30dp"
-        android:id="@+id/main_login_btn"
-        android:text="Login"/>
-
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:text="Don't Have an Account? Sign Up Here!"
-        android:textColor="@android:color/holo_blue_dark"
-        android:id="@+id/main_signup_link"/>
+        android:text="Register"
+        android:id="@+id/regis_regis_btn"/>
 
 </LinearLayout>
